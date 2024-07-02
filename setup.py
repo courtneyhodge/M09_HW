@@ -1,30 +1,30 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 
 setup(
 
-    name = 'booklover.py',
+    name='M09 HW',
 
-    version = '0.1.0',
+    version='0.1.0',
 
-    author = 'Courtney Hodge',
+    author='Courtney Hodge',
 
-    author_email = 'yss2zv@virginia.edu',
+    author_email='yss2zv@virginia.edu',
 
-    packages = ['booklover.py', 'booklover_test.py'],
+    packages=find_packages(),  # Automatically find packages in your project
 
-    scripts = ['my_project_script'],
+    scripts=['my_project_script'],
 
-    url = 'https://github.com/courtneyhodge/M09_HW',
+    url='https://github.com/courtneyhodge/M09_HW',
 
-    license = 'MIT LICENSE',
+    license='MIT LICENSE',
 
-    description = 'An awesome package that does something',
+    description='An awesome package that does something',
 
-    long_description = open('README.txt').read(),
+    long_description=open('README.md').read(),
 
-    install_requires = [
+    install_requires=[
 
         "Django >= 1.1.1",
 
@@ -33,3 +33,5 @@ setup(
     ],
 
 )
+
+
